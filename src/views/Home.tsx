@@ -1,5 +1,9 @@
+import ArticlesList from '@/components/Articles/ArticlesList';
+
 const HomeView = () => {
-   return <div>Home view</div>;
+   return <div>
+    <ArticlesList />
+   </div>
 };
 
 export default HomeView;

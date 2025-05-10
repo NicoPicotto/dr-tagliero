@@ -1,8 +1,9 @@
 import { ThemeProvider } from "@/components/theme-provider";
-import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomeView from "./views/Home";
+import Footer from "./components/Footer";
+import ArticleView from "./views/Article";
 
 function App() {
    return (
@@ -11,7 +12,9 @@ function App() {
             <Navbar />
             <Routes>
                <Route path='/' element={<HomeView />} />
+               <Route path='/articulo/:id' element={<ArticleView />} />
             </Routes>
+            <Footer />
          </Router>
       </ThemeProvider>
    );
